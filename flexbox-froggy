@@ -1,0 +1,94 @@
+1. justify-content
+Ito yung ginagamit para i-position o iusog ang mga items sa main axis.
+
+Kapag default ang flex-direction: row, puwede mong ilagay ang items sa:
+- Left
+- Center
+- Right
+- Space between
+- Space around
+
+2. align-items
+Ito naman yung ginagamit para i-position ang items sa cross axis.
+
+Kapag default ang flex-direction: row, puwede mong ilagay ang items sa:
+- Top
+- Center
+- Bottom
+
+3. flex-direction
+Ito ang nagdidikta kung anong direction ang arrangement ng items.
+Value	Meaning
+row	Pahalang
+row-reverse	Pahalang, baliktad
+column	Patayo
+column-reverse	Patayo, baliktad
+
+-align-content
+1. Ano ang align-content?
+Ang align-content ay ginagamit para kontrolin ang position at spacing ng multiple rows o lines ng items sa loob ng container.
+
+Simple explanation:
+- align-items = inaayos ang position ng items sa isang line.
+- align-content = inaayos ang position at spacing ng multiple lines.
+Example: May 3 rows ng frogs. Gusto mong magkakadikit lahat sa taas ng pond. Dito papasok ang align-content.
+2. Understanding the six values
+
+1. flex-start
+Lahat ng lines nasa taas.
+
+2. flex-end
+Lahat ng lines nasa baba.
+
+
+3. center
+Nasa gitna ang group ng lines.
+
+4. space-between
+Pantay ang pagitan ng lines; walang extra space sa outer edges.
+
+5. space-around
+May space sa paligid ng bawat line.
+
+6. stretch
+Ang lines ay nag-e-expand para punan ang available space.
+
+3. Importanteng difference
+CSS property	Ginagawa
+align-items	Position ng individual items
+align-content	Position/spacing ng multiple lines
+justify-content	Position/spacing along main axis
+
+Important: Ang align-content ay may epekto kapag may multiple lines at may extra space sa cross axis. Kaya karaniwang kailangan mo rin ng flex-wrap: wrap.
+
+
+
+Another property you can apply to individual items is align-self. This property accepts the same values as align-items and its value for the specific item.
+
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+align-self:flex-end
+}
+meaning nyan align-item pang maramihan pero kapag align self nama isahan para ma control mo sya gaagmitin mo class nun or element
+
+4 - flex-wrap
+nowrap: Every item is fit to a single line.
+-Hindi lilipat sa next line
+Lahat ng items ay mananatili sa iisang line kahit magkulang ang space.
+
+wrap: Items wrap around to additional lines.
+-Puwedeng lumipat sa next line
+Kapag wala nang space, lilipat ang ibang items sa susunod na line.
+
+wrap-reverse: Items wrap around to additional lines in reverse.
+-Baliktad ang direction ng additional lines
+Puwedeng magkaroon ng multiple lines, pero ang cross-axis direction ng mga line ay reversed.
+
+
+5 - The two properties flex-direction and flex-wrap are used so often together that the shorthand property flex-flow was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+
+For example, you can use flex-flow: row wrap to set rows and wrap them.
