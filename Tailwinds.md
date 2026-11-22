@@ -25,3 +25,8 @@ suggest ng ai hindi ko ginawa ang 4
 <img width="650" height="867" alt="image" src="https://github.com/user-attachments/assets/bb126efe-b52f-4752-97a7-989c9e1d08ad" />
 <img width="558" height="843" alt="image" src="https://github.com/user-attachments/assets/3a219ba8-34fc-4d7e-a1d3-b6b858fa6ec6" />
 <img width="559" height="422" alt="image" src="https://github.com/user-attachments/assets/a8658c84-c658-43bd-874a-ee5f9a4bbf4a" />
+
+
+-=----------------------------------11-22-2026----------------------
+tamang practice lang tamang gawa and recap for tailwind
+
